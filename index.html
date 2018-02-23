@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap-Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 </head>
 <style>
-    body { background-image: url("./assets/sayagata-400px/sayagata-400px.png");
-            margin-bottom: 100px;
-        }
+    @font-face {
+    font-family: "myfont";
+    src: url('./assets/heroes_legend/HeroesLegend.ttf');
+    }
+
+    body {
+        background-image: url("./assets/sayagata-400px/sayagata-400px.png");
+        margin-bottom: 100px;
+    }
+
+    #name {
+        font-family: "myfont";
+        margin-top: 18px;
+    }
+
     p {
         text-indent: 40px;
     }
-    img { height: 240px;
+
+    img {
+        height: 240px;
         width: 290px;
         margin-right: 20px;
     }
+
     .footer {
         position: fixed;
         bottom: 0;
@@ -28,6 +45,7 @@
         border-top: solid 1px #eee;
         margin-top: 50px;
     }
+
     .button {
         height: 50px;
         width: 50px;
@@ -37,71 +55,89 @@
         margin-bottom: 0px;
     }
 
-.footer p {
-  margin-top: 30px;
-}
+    .footer p {
+        margin-top: 30px;
+    }
 </style>
 
 <body>
 
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#"><h1>Christina Wu</h1></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <h1 id="name">Christina Wu</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">About
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
 
             </ul>
-          </div>
-        </nav>
-        
-        <div class= "container">
-            <div class= "row">
-                <div class= "col-md-12">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
                 <br>
-                </div>
             </div>
-            <div class= "row">
-                <div class= "col-md-8 p-4 bg-light text-dark"> 
-                    <h2>About Me</h2>
-                    <hr>
-                    <img src="./assets/IMG_6378.jpg" class="img-thumbnail float-left" alt="Profile Pic">
-                    <p>Christina Wu is a Southern California native currently residing in Irvine, California. She has previously lived abraod in Shanghai, China and Taipei, Taiwan. She graduated from Purdue University with a BA in Sociology with a Law and Society concentration. She also has minors in Psycology and Forensic Science. She is currently enrolled in the UCI Coding Boot Camp. </p>
-                    <p>Her hobbies include video games, cinema, tennis, martial arts, and snowboarding. Christina Wu is scuba diving open water certified also. She is a proud mother of her 2 year old French Bull Dog named Jo. Jo is actually sort of Josephine and her full name is Josephine Marcy Wu. She enjoys traveling the world and is always looking forward to going on a new adventure.</p>
-                </div>
-                <div class= "col-md-1">
-                </div>
-                <div class= "col-md-3">
-                    <div class= "row">
-                        <div class= "col-md-12 p-4 bg-light text-dark text-center">
-                            <h4>Connect With Me</h4>
-                            <hr>
-                            <a href="https://github.com/chrisyforshort"> <img class="button" src="./assets/social-media_github_flat-rounded-square-white-on-black_512x512.png"></a>
-                            <a href="https://www.linkedin.com/in/christinasarahwu/"> <img class="button" src="./assets/if_linkedin_386655.png"></a>
-                            <a href="https://stackoverflow.com/users/9217351/christina-wu"> <img class="button" src="./assets/if_StackOverflow_2613280.png"></a>
-                        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 p-4 bg-light text-dark">
+                <h2>About Me</h2>
+                <hr>
+                <img src="./assets/IMG_6378.jpg" class="img-thumbnail float-left" alt="Profile Pic">
+                <p>Christina Wu is a Southern California native currently residing in Irvine, California. She has previously
+                    lived abraod in Shanghai, China and Taipei, Taiwan. She graduated from Purdue University with a BA in
+                    Sociology with a Law and Society concentration. She also has minors in Psycology and Forensic Science.
+                    She is currently enrolled in the UCI Coding Boot Camp. </p>
+                <p>Her hobbies include video games, cinema, tennis, martial arts, and snowboarding. Christina Wu is scuba diving
+                    open water certified also. She is a proud mother of her 2 year old French Bulldog named Jo. Jo is actually
+                    sort for Josephine and her full name is Josephine Marcy Wu. She enjoys traveling the world and is always
+                    looking forward to going on a new adventure.</p>
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-12 p-4 bg-light text-dark text-center">
+                        <h4>Connect With Me</h4>
+                        <hr>
+                        <a href="https://github.com/chrisyforshort">
+                            <img class="button" src="./assets/social-media_github_flat-rounded-square-white-on-black_512x512.png">
+                        </a>
+                        <a href="https://www.linkedin.com/in/christinasarahwu/">
+                            <img class="button" src="./assets/if_linkedin_386655.png">
+                        </a>
+                        <a href="https://stackoverflow.com/users/9217351/christina-wu">
+                            <img class="button" src="./assets/if_StackOverflow_2613280.png">
+                        </a>
                     </div>
                 </div>
-            <div class= "row">
-                <div class= "col-md-12">
-                <br>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
                 </div>
             </div>
         </div>
-      <footer class="footer">
-        <div class="container">
-          <p>Copyright &copy; 2018 Christina Wu</p>
-        </div>
-      </footer>
+        <footer class="footer">
+            <div class="container">
+                <p>Copyright &copy; 2018 Christina Wu</p>
+            </div>
+        </footer>
 </body>
+
 </html>
